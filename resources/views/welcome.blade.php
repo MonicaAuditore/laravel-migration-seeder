@@ -9,14 +9,18 @@
     </head>
     <body>
         {{-- <img src="{{ Vite::asset('resources/img/logo.png') }}" alt="">  --}}
-        <h1>Test</h1>
+        <h1>Treni:</h1>
         <main>
             <div class=row>
                 <div class="col">
                     @isset($trains)
                     @foreach ($trains as $train)
                         <ul>
-                            <li> {{$train->id}} </li>
+                            <li> ID treno: {{$train->id}} </li>
+                            <li> Azienda: {{$train->Azienda}} </li>
+                            <li> Stazione di partenza {{$train->Stazione_di_partenza}} </li>
+                            <li> Stazione di arrivo {{$train->Stazione_di_arrivo}} </li>
+                            <li> Codice treno: {{$train->Codice_treno}} </li>
                             
                         </ul>
                     @endforeach
