@@ -14,15 +14,6 @@ return new class extends Migration
     public function up()
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->string('Azienda');
-            $table->string('Stazione di partenza');
-            $table->string('Stazione di arrivo');
-            $table->time('Orario di partenza');
-            $table->time('Orario di arrivo');
-            $table->integer('Codice Treno');
-            $table->integer('Numero Carrozze');
-            $table->boolean('In orario');
-            $table->boolean('Cancellato');
             $table->date('Data');
         });
     }
