@@ -21,6 +21,7 @@
                             <li> Azienda: {{$train->Azienda}} </li>
                             <li> Stazione di partenza {{$train->Stazione_di_partenza}} </li>
                             <li> Stazione di arrivo {{$train->Stazione_di_arrivo}} </li>
+                            <li> Classe: {{$train->Classe}} </li>
                             <li> Codice treno: {{$train->Codice_treno}} </li>
                             
                         </ul>

@@ -20,7 +20,7 @@ class trainsTableSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        for($i = 0; $i < 2; $i++) {
+        for($i = 0; $i < 5; $i++) {
         $train = new train();
         $train->Azienda = 'Trenitalia';
         $train->Stazione_di_partenza = 'Cuneo';
@@ -32,7 +32,7 @@ class trainsTableSeeder extends Seeder
         $train->In_orario = 0;
         $train->Cancellato = 1;
         $train->Data = '2023-03-13';
-        $train->classe = $faker->buildingNumber();
+        $train->classe = $faker->numberBetween(1, 2);
         $train->save();
         }
     }
