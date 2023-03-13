@@ -8,9 +8,24 @@
         @vite('resources/js/app.js')
     </head>
     <body>
-        <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> 
+        {{-- <img src="{{ Vite::asset('resources/img/logo.png') }}" alt="">  --}}
         <h1>Test</h1>
-
+        <main>
+            <div class=row>
+                <div class="col">
+                    @isset($trains)
+                    @foreach ($trains as $train)
+                        <ul>
+                            <li> {{$train->id}} </li>
+                            
+                        </ul>
+                    @endforeach
+                    @else
+                <p>Nessun treno disponibile</p>
+            @endisset
+                </div>
+            </div>
+        </main>
 
     </body>
 </html>

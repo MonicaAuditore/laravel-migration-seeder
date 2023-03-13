@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\Guest\MainController;
+use App\Http\Controllers\Guest\MainController;
+
+use App\Models\train;
 
 /*
 |--------------------------------------------------------------------------
