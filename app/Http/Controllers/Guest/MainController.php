@@ -17,7 +17,7 @@ class MainController extends Controller
 //     }
 
         public function index() {
-            $trains = train::where('data', '2023-03-13')->get();
+            $trains = train::where('data', '>=', date('Y-m-d'))->get();
             return view('welcome', [
                 'trains' => $trains
             ]);
